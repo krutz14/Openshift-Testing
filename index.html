@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>
+        Login Page
+    </title>
+</head>
+<body>
+    <h1  style="font-family:Comic Sans Ms";text-align="center"color:"#00FF00";font-size:"20pt";>
+        Simple Login Page
+    </h1>
+    <form name="login">
+        Username <input type="text" name="userid"/>
+        Password <input type="password" name="pswrd">
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Clear"/>
+    </form>
+    <script language="javascript">
+        function check(form)
+        {
+            if(form.userid.value=="Krutika" && form.pswrd.value=="Krutika")
+            {
+                alert("Login successful");
+            }
+            else
+            {
+                alert("Login insuccesful");
+            }
+        }
+     </script>
+</body>
+
+</html>
